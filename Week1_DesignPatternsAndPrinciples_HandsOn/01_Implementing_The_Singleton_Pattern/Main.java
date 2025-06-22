@@ -1,8 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        Logger logger1 = Logger.getInstance();
-        Logger logger2 = Logger.getInstance();
+        Login logger1 = Login.getInstance();
+        Login logger2 = Login.getInstance();
 
         if(logger1 == logger2) {
             System.out.println("Both the logger instances are the same");
@@ -15,7 +15,7 @@ public class Main {
         loggerTest(logger1, logger2);
     }
 
-    public static void loggerTest(Logger logger1, Logger logger2) {
+    public static void loggerTest(Login logger1, Login logger2) {
         logger1.setUsernameAndPassword("sakthi", "12345");
         logger2.setUsernameAndPassword("vel", "67890");
         

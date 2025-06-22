@@ -1,14 +1,14 @@
-public class Logger {
-    private static Logger loggerInstance;
+public class Login {
+    private static Login loggerInstance;
 
     private String username;
     private String password;
     
-    private Logger() {}
+    private Login() {}
 
-    public static Logger getInstance() {
+    public static Login getInstance() {
         if(loggerInstance == null) {
-            loggerInstance = new Logger();
+            loggerInstance = new Login();
         }
 
         return loggerInstance;
